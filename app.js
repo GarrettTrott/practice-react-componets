@@ -106,7 +106,7 @@ const Planet = (props) => {
   /* 2: Create a container component that iterates over the planets array and renders a 'Planet' component for each object in the array */
 }
 
-const App = (props) => {
+const App = () => {
   return (
     <div className="container">
       {planets.map((planet) => (
@@ -126,4 +126,4 @@ const App = (props) => {
   /* 3: Render the container component to the DOM */
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App planets={planets} />, document.getElementById('root'))
